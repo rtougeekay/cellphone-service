@@ -44,7 +44,7 @@ public class CellPhone {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        this.phoneNumber = this.phoneNumber;
     }
 
     public String getOwner() {

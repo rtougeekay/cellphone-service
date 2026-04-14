@@ -14,20 +14,24 @@ public class CellPhoneApplication {
         phone.setSerialNumber(serial);
 
 
-
         System.out.println("What model is the phone? ");
         String model = input.nextLine();
         phone.setModelNumber(model);
 
 
+        System.out.println("Who is the carrier?");
+        String carrier = input.nextLine();
+        phone.setCarrier(carrier);
 
+        System.out.println("What is the phone number?");
+        String phoneNumber = input.nextLine();
+        phone.setPhoneNumber(phoneNumber);
 
+        System.out.println("Who is the owner of the phone?");
+        String owner = input.nextLine();
+        phone.setOwner(owner);
 
     }
-
-
-
-
 
 
 }
