@@ -1,57 +1,33 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class CellPhoneApplication {
-    private int serialNumber;
-    private String modelNumber;
-    private String carrier;
-    private String phoneNumber;
-    private String owner;
+    public static void main(String[] args) {
 
-    public CellPhoneApplication() {
-        serialNumber = 0;
-        modelNumber = "";
-        carrier = "";
-        phoneNumber = "";
-        owner = "";
+        Scanner input = new Scanner(System.in);
+
+        CellPhone phone = new CellPhone();
+
+        System.out.println("What is the serial number? ");
+        int serial = input.nextInt();
+        phone.setSerialNumber(serial);
+
+
+
+        System.out.println("What model is the phone? ");
+        String model = input.nextLine();
+        phone.setModelNumber(model);
+
+
+
+
+
     }
 
-    public int getSerialNumber() {
-        return serialNumber;
-    }
 
-    public void setSerialNumber(int serialNumber) {
-        this.serialNumber = serialNumber;
-    }
 
-    public String getModelNumber() {
-        return modelNumber;
-    }
 
-    public void setModelNumber(String modelNumber) {
-        this.modelNumber = modelNumber;
-    }
 
-    public String getCarrier() {
-        return carrier;
-    }
 
-    public void setCarrier(String carrier) {
-        this.carrier = carrier;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getOwner() {
-        return owner;
-    }
-
-    public void setOwner(String owner) {
-        this.owner = owner;
-    }
 }
